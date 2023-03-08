@@ -68,12 +68,14 @@ export default function ModalSection({
                                         <div className='w-full flex flex-col xs:flex-row items-start xs:items-center justify-between text-stone-700 text-sm mt-1'>
                                             <p>Last Sale (Contract)</p>
                                             <div className="flex items-center gap-1">
-                                                <img
-                                                    src={selectedNFT.pay_token.logo_url}
-                                                    alt='pay token logo'
-                                                    width={20}
-                                                    height={20}
-                                                />
+                                                {selectedNFT.pay_token && (
+                                                    <img
+                                                        src={selectedNFT.pay_token.logo_url}
+                                                        alt='pay token logo'
+                                                        width={20}
+                                                        height={20}
+                                                    />
+                                                )}
                                                 <span>{handleCutDecimal(selectedNFT.usd_price / selectedNFT.pay_token.price)}</span>
                                                 <span>{selectedNFT.pay_token.symbol}</span>
                                                 <p>(${handleCutDecimal(selectedNFT.usd_price)})</p>
