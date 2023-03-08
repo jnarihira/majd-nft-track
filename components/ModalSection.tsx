@@ -56,6 +56,7 @@ export default function ModalSection({
                                             currentTarget.onerror = null;
                                             currentTarget.src = '/image/nft-placeholder.svg'
                                         }}
+                                        alt="nft card image"
                                     />
                                     <div className='w-full md:w-[576px] h-max lg:h-[400px] xl:h-[500px] overflow-y-auto overflow-x-hidden pr-2'>
                                         <div className='flex items-center justify-between gap-2'>

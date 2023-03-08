@@ -108,6 +108,7 @@ export default function DisclosurePage({
                                                         }}
                                                         className="w-5 h-5 cursor-pointer"
                                                         onClick={() => handleGoMarketplace(item.name, selectedNFT.contract_id)}
+                                                        alt="marketplace logo"
                                                     />
                                                 </div>
                                             )
@@ -136,7 +137,7 @@ export default function DisclosurePage({
                                     {selectedNFT.attributes.length !== 0 ? (
                                         selectedNFT.attributes.map((item) => {
                                             return (
-                                                <div className='flex flex-col items-center border border-sky-500 p-2 px-4 rounded-xl'>
+                                                <div className='flex flex-col items-center border border-sky-500 p-2 px-4 rounded-xl' key={item.trait_type}>
                                                     <p className='text-sky-500 font-bold'>{item.trait_type}</p>
                                                     <p>{item.value}</p>
                                                 </div>
