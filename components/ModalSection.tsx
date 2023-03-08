@@ -78,7 +78,7 @@ export default function ModalSection({
                                                     <span>{handleCutDecimal(selectedNFT.usd_price / selectedNFT.pay_token.price)}</span>
                                                     <span>{selectedNFT.pay_token.symbol}</span>
                                                     <p>(${handleCutDecimal(selectedNFT.usd_price)})</p>
-                                                </div>
+                                                </div> 
                                             )}
                                         </div>
                                         <DisclosurePage
